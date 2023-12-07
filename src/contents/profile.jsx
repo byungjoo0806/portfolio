@@ -35,7 +35,7 @@ const Profile = () => {
     return (
         <div
             ref={animatedElementRef}
-            className={`flex flex-row items-center justify-between gap-[38px] transition-opacity duration-1000 ease-in-out ${
+            className={`flex flex-col md:flex-row items-center justify-between gap-[38px] transition-opacity duration-1000 ease-in-out ${
                 isVisible ? 'opacity-100' : 'opacity-0'
             }`}
         >
@@ -49,10 +49,10 @@ const Profile = () => {
             </div>
             <div className="w-[100%] box-border md:w-[70%] md:p-[10px] ">
                 <Hero>
-                    박병주 <span className="text-[16px] text-slate-400 font-normal">web7722</span>
+                    Byungjoo Park <span className="text-[20px] text-slate-400 font-normal pl-[10px]">Andy</span>
                 </Hero>
                 <p className="text-slate-700 pt-[5px] md:text-[24px] md:pt-[10px] text-[16px]">
-                    
+                    Blockchainer 3.0
                 </p>
                 <p className="flex flex-col text-[16px] items-left pt-[7px] md:pt-[5px] md:text-[14px]">
                     <a href="mailto:andybyungjoopark@gmail.com" className="flex items-center gap-[5px] text-slate-600">
@@ -60,11 +60,11 @@ const Profile = () => {
                         andybyungjoopark@gmail.com
                     </a>
                     <a
-                        href="https://github.com/ingoo-blockchain?tab=repositories"
+                        href="https://github.com/byungjoo0806"
                         className="flex items-center gap-[5px] text-slate-600"
                     >
                         <IoLogoGithub />
-                        ingoo-blockchain
+                        byungjoo0806
                     </a>
                     <a href="https://tistory.com" className="flex items-center gap-[5px] text-slate-600">
                         <FaBlogger />

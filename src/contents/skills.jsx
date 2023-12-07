@@ -1,15 +1,15 @@
 import { Wrapper, Heading } from '../components/common'
 import { DiJavascript, DiNodejs, DiGithubBadge } from 'react-icons/di'
-import { SiNextdotjs, SiTypescript, SiJavascript, SiExpress, SiReact } from 'react-icons/si'
+import { SiNextdotjs, SiTypescript, SiJavascript, SiExpress, SiReact, SiSolidity } from 'react-icons/si'
 
 const Skills = () => {
     return (
         <Wrapper>
-            <Heading>기술 스택</Heading>
+            <Heading>Tech Stack</Heading>
             <ul className="flex flex-col divide-y divide-gray-400">
                 <li className="flex flex-row gap-[32px] py-[32px">
                     <h3 className="text-[16px] md:text-[24px] font-extrabold md:font-semibold w-[20%] basisc-[25%]">
-                        언어
+                        Language
                     </h3>
                     <ul className="flex flex-col gap-[16px] text-[16px] pb-[32px] font-medium w-full items-start">
                         <li className="flex flex-col gap-[8px] md:gap-[32px] md:flex-row items-baseline">
@@ -19,14 +19,21 @@ const Skills = () => {
                             </span>
                             <ul className="list-disc list-outside leading-6 px-[20px] md:leading-8 text-[12px] md:text-[16px] ">
                                 <li>
-                                    변수를 선언할줄
-                                    암!암!암!암!암!암!암!암!암!암!암!암!암!암!암!암!암!암!암!암!암!암!암!암!
-                                    암!암!암!암!암!암!암!암!암!암!암!암!암!암!암!
+                                    able to declare variables and understand the differences
+                                    between var,let, and const
                                 </li>
-                                <li>Console.log 잘찍음</li>
-                                <li>연산자 사용할줄암!</li>
-                                <li>조건문을 배움</li>
-                                <li>배열 메서드를 능숙하게 다룸!</li>
+                                <li>
+                                    able to debug through checking the logs in console
+                                </li>
+                                <li>
+                                    able to use if statement, map function, and for loop depending on cases
+                                </li>
+                                <li>
+                                    able to use methods related to string and array type data
+                                </li>
+                                <li>
+                                    understand call stack and hoisting
+                                </li>
                             </ul>
                         </li>
 
@@ -35,12 +42,16 @@ const Skills = () => {
                                 <SiTypescript />
                                 <span className="md:w-[120px]">Typescript</span>
                             </span>
-                            <ul className="list-disc list-outside leading-6 px-[20px] md:leading-8 text-[12px] md:text-[16px] ">
-                                <li>Typescript 세팅할줄암!!!!!!!!!!!</li>
-                                <li>Console.log 잘찍음</li>
-                                <li>연산자 사용할줄암!</li>
-                                <li>조건문을 배움</li>
-                                <li>배열 메서드를 능숙하게 다룸!</li>
+                            <ul className="list-disc list-outside leading-6 px-[31px] md:leading-8 text-[12px] md:text-[16px] ">
+                                <li>
+                                    able to set specific types to variables and interface for objects
+                                </li>
+                                <li>
+                                    tries hardest not to use any type when importing or declaring variables
+                                </li>
+                                <li>
+                                    want to get professional in usage of class components
+                                </li>
                             </ul>
                         </li>
                     </ul>
@@ -48,7 +59,7 @@ const Skills = () => {
 
                 <li className="flex flex-row gap-[32px] py-[32px]">
                     <h3 className="text-[16px] md:text-[24px] font-extrabold md:font-semibold w-[20%] basisc-[25%]">
-                        프론트 앤드
+                        frontend
                     </h3>
                     <ul className="flex flex-col gap-[16px] text-[16px] pb-[32px] font-medium w-full items-start">
                         <li className="flex flex-col gap-[8px] md:gap-[32px] md:flex-row items-baseline">
@@ -57,22 +68,15 @@ const Skills = () => {
                                 <span className="md:w-[120px]">React</span>
                             </span>
                             <ul className="list-disc list-outside leading-6 px-[20px] md:leading-8 text-[12px] md:text-[16px] ">
-                                <li>CRA로 프로젝트 다수 생성 경험 보유!</li>
-                                <li>상태에 대해서 설명할수있음!</li>
-                                <li>브라우저 랜더링 과정을 설명 할 수 있음!</li>
-                            </ul>
-                        </li>
-
-                        <li className="flex flex-col gap-[8px] md:gap-[32px] md:flex-row items-baseline">
-                            <span className="text-[16px] text-slate-600 md:text-[24px] basis-[20%] flex items-center gap-[8px]">
-                                <SiNextdotjs />
-                                <span className="md:w-[120px]">NextJS</span>
-                            </span>
-                            <ul className="list-disc list-outside leading-6 px-[20px] md:leading-8 text-[12px] md:text-[16px] ">
-                                <li>Client Component 암!</li>
-                                <li>동적라우팅 사용해봄!</li>
-                                <li>interface 배우는중!</li>
-                                <li>any 잘씀!</li>
+                                <li>
+                                    have worked on multiple projects (team and personal) through CRA
+                                </li>
+                                <li>
+                                    able to organize the directories for projects : components, contents, layout, pages, etc.
+                                </li>
+                                <li>
+                                    want to be professional at creating and using higher-order components
+                                </li>
                             </ul>
                         </li>
                     </ul>
@@ -80,7 +84,7 @@ const Skills = () => {
 
                 <li className="flex flex-row gap-[32px] py-[32px]">
                     <h3 className="text-[16px] md:text-[24px] font-extrabold md:font-semibold w-[20%] basisc-[25%]">
-                        백앤드
+                        backend
                     </h3>
                     <ul className="flex flex-col gap-[16px] text-[16px] pb-[32px] font-medium w-full items-start">
                         <li className="flex flex-col gap-[8px] md:gap-[32px] md:flex-row items-baseline">
@@ -88,8 +92,40 @@ const Skills = () => {
                                 <SiExpress />
                                 <span className="md:w-[120px]">Express</span>
                             </span>
-                            <ul className="list-disc list-outside leading-6 px-[20px] md:leading-8 text-[12px] md:text-[16px] ">
-                                <li>RestFul API 스럽게 할라고 노력함!</li>
+                            <ul className="list-disc list-outside leading-6 px-[29px] md:leading-8 text-[12px] md:text-[16px] ">
+                                <li>
+                                    able to create and connect with databases through MySQL using Sequelize library for Node.js
+                                </li>
+                                <li>
+                                    able to deploy HTMl projects through AWS EC2
+                                </li>
+                                <li>
+                                    want to learn how to deploy React projects using S3 and Amplify
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li className="flex flex-row gap-[32px] py-[32px]">
+                    <h3 className="text-[16px] md:text-[24px] font-extrabold md:font-semibold w-[20%] basisc-[25%]">
+                        contract
+                    </h3>
+                    <ul className="flex flex-col gap-[16px] text-[16px] pb-[32px] font-medium w-full items-start">
+                        <li className="flex flex-col gap-[8px] md:gap-[32px] md:flex-row items-baseline">
+                            <span className="text-[16px] text-slate-600 md:text-[24px] basis-[20%] flex items-center gap-[8px]">
+                                <SiSolidity />
+                                <span className="md:w-[120px]">Solidity</span>
+                            </span>
+                            <ul className="list-disc list-outside leading-6 px-[29px] md:leading-8 text-[12px] md:text-[16px] ">
+                                <li>
+                                    able to use contract libraries of Open Zeppelin (ERC20,ERC721) 
+                                    to deploy tokens, mint NFTs, and create voting pools
+                                </li>
+                                <li>
+                                    want to study ERC4337 that allows account abstraction and provides paymaster API
+                                    that can be used for voting
+                                </li>
                             </ul>
                         </li>
                     </ul>
