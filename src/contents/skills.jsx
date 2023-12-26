@@ -44,10 +44,7 @@ const Skills = () => {
                             </span>
                             <ul className="list-disc list-outside leading-6 px-[31px] md:leading-8 text-[12px] md:text-[16px] ">
                                 <li>
-                                    able to set specific types to variables and interface for objects
-                                </li>
-                                <li>
-                                    tries hardest not to use any type when importing or declaring variables
+                                    able to set specific types to variables and interface for objects (avoids "any" type as much as possible)
                                 </li>
                                 <li>
                                     want to get professional in usage of class components
