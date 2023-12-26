@@ -23,7 +23,7 @@ const Projects = () => {
                 <li className="flex flex-col gap-[32px] md:flex-row">
                     <div className="w-full md:w-[420px] ">
                         <img
-                            src="https://scontent-ssn1-1.xx.fbcdn.net/v/t39.30808-6/241295634_1991321801017570_4939500428684140967_n.png?_nc_cat=109&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=B5g3lz-t8PgAX8Yr4Km&_nc_ht=scontent-ssn1-1.xx&oh=00_AfDZ_If9Y9ppSAqounXldMpXaP17pZr4CDhCB736Mg5VLA&oe=6576821E"
+                            src="./bouncecode.png"
                             className="w-full"
                             alt="company collaboration project"
                         />
