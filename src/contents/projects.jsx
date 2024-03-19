@@ -24,7 +24,7 @@ const Projects = () => {
                     <div className="w-full md:w-[420px] flex flex-col justify-center items-center">
                         <img
                             src="./bouncecode.png"
-                            className="w-[50%] md:w-[20%]"
+                            className="w-[50%] md:w-full"
                             alt="company collaboration project"
                         />
                         <ul className="flex text-[12px] text-slate-600 py-[8px] gap-[8px] flex-col items-center md:items-start">
@@ -94,7 +94,7 @@ const Projects = () => {
                     <div className="w-full md:w-[420px] flex flex-col justify-center items-center">
                         <img
                             src="./steam100.png"
-                            className="w-[50%] md:w-[20%]"
+                            className="w-[50%] md:w-full"
                             alt="steam100"
                         />
                         <ul className="flex text-[12px] text-slate-600 py-[8px] gap-[8px] flex-col items-center md:items-start">
@@ -154,7 +154,7 @@ const Projects = () => {
                     <div className="w-full md:w-[420px] flex flex-col justify-center items-center">
                         <img
                             src="./linkee.png"
-                            className="w-[50%] md:w-[20%]"
+                            className="w-[50%] md:w-full"
                             alt="linkee"
                         />
                         <ul className="flex text-[12px] text-slate-600 py-[8px] gap-[8px] flex-col items-center md:items-start">
