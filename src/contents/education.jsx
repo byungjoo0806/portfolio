@@ -14,11 +14,13 @@ const Education = () => {
             <ul className="flex flex-col w-full gap-[120px]">
                 <li className="flex flex-col gap-[32px] md:flex-row">
                     <div className="w-full md:w-[420px]">
-                        <img
-                            src="./kga.png"
-                            className="w-[50%] md:w-full"
-                            alt="KGA"
-                        />
+                        <div className='w-full flex justify-center items-center'>
+                            <img
+                                src="./kga.png"
+                                className="w-[50%] md:w-full"
+                                alt="KGA"
+                                />
+                        </div>
                         <ul className="flex text-[12px] text-slate-600 py-[8px] gap-[8px] flex-col items-center md:items-start">
                             <li className="text-[16px]">Kyungil Game Academy</li>
                             <li className="text-[16px]">Bootcamp</li>
