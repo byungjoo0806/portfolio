@@ -21,10 +21,10 @@ const Projects = () => {
             <ul className="flex flex-col w-full gap-[120px]">
                 {/* 첫번째 프로젝트 */}
                 <li className="flex flex-col gap-[32px] md:flex-row">
-                    <div className="w-full md:w-[420px] ">
+                    <div className="w-full md:w-[420px] flex flex-col justify-center items-center">
                         <img
                             src="./bouncecode.png"
-                            className="w-full"
+                            className="w-[50%] md:w-[20%]"
                             alt="company collaboration project"
                         />
                         <ul className="flex text-[12px] text-slate-600 py-[8px] gap-[8px] flex-col items-center md:items-start">
@@ -91,13 +91,13 @@ const Projects = () => {
 
                 {/* 두번째 프로젝트 */}
                 <li className="flex flex-col gap-[32px] md:flex-row">
-                    <div className="w-full md:w-[420px] ">
+                    <div className="w-full md:w-[420px] flex flex-col justify-center items-center">
                         <img
                             src="./steam100.png"
-                            className="w-full"
+                            className="w-[50%] md:w-[20%]"
                             alt="steam100"
                         />
-                        <ul className="flex text-[12px] text-slate-600 py-[8px] gap-[8px] flex-row md:flex-col items-center md:items-start">
+                        <ul className="flex text-[12px] text-slate-600 py-[8px] gap-[8px] flex-col items-center md:items-start">
                             <li className="text-[16px]">Team Project (3 members)</li>
                             <li className="text-stone-500">2023. 08. 03 ~ 2023. 08. 28</li>
                             <li>frontend</li>
@@ -151,13 +151,13 @@ const Projects = () => {
 
                 {/* 세번째 프로젝트 */}
                 <li className="flex flex-col gap-[32px] md:flex-row">
-                    <div className="w-full md:w-[420px] ">
+                    <div className="w-full md:w-[420px] flex flex-col justify-center items-center">
                         <img
                             src="./linkee.png"
-                            className="w-full"
+                            className="w-[50%] md:w-[20%]"
                             alt="linkee"
                         />
-                        <ul className="flex text-[12px] text-slate-600 py-[8px] gap-[8px] flex-row md:flex-col items-center md:items-start">
+                        <ul className="flex text-[12px] text-slate-600 py-[8px] gap-[8px] flex-col items-center md:items-start">
                             <li className="text-[16px]">Team Project (3 members)</li>
                             <li className="text-stone-500">2023. 06. 02 ~ 2023. 06. 26</li>
                             <li>frontend</li>

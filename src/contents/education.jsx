@@ -1,5 +1,8 @@
 import { FaExternalLinkAlt } from 'react-icons/fa';
 import { Heading, Wrapper } from '../components/common'
+import { TiHtml5 } from 'react-icons/ti';
+import { SiAmazonec2, SiCss3, SiJavascript, SiSolidity, SiTypescript } from 'react-icons/si';
+import { DiGithubBadge, DiNodejs } from 'react-icons/di';
 
 const Education = () => {
     return (
@@ -10,21 +13,34 @@ const Education = () => {
 
             <ul className="flex flex-col w-full gap-[120px]">
                 <li className="flex flex-col gap-[32px] md:flex-row">
-                    <div className="w-full md:w-[420px] ">
+                    <div className="w-full md:w-[420px]">
                         <img
                             src="./kga.png"
-                            className="w-full"
+                            className="w-[50%] md:w-full"
                             alt="KGA"
                         />
                         <ul className="flex text-[12px] text-slate-600 py-[8px] gap-[8px] flex-col items-center md:items-start">
                             <li className="text-[16px]">Kyungil Game Academy</li>
                             <li className="text-[16px]">Bootcamp</li>
                             <li className="text-stone-500">2023. 02. 27 ~ 2023. 12. 11</li>
-                            <li>frontend</li>
-                            <li>backend</li>
-                            <li>deploy</li>
-                            <li>blockchain</li>
                         </ul>
+                        <h3 className="py-[16px] text-[16px] font-bold">Tech Stack</h3>
+                        <div className="flex flex-col justify-center text-[32px] gap-[8px] py-[8px] px-[5px]">
+                            <div className='flex flex-row gap-[5px] mb-[5px]'>
+                                <TiHtml5 />
+                                <SiCss3 />
+                                <SiJavascript />
+                                <SiTypescript />
+                            </div>
+                            <div className='flex flex-row gap-[5px] mb-[5px]'>
+                                <DiNodejs />
+                                <SiAmazonec2 />
+                                <DiGithubBadge />
+                            </div>
+                            <div className='flex flex-row gap-[5px]'>
+                                <SiSolidity />
+                            </div>
+                        </div>
                     </div>
                     <div className="w-full">
                         <h2 className="flex flex-row items-center gap-[8px] text-[16px] text-slate-800 md:text-black md:text-[24px] font-semibold pb-[16px]">
@@ -53,14 +69,14 @@ const Education = () => {
                 </li>
 
                 <li className="flex flex-col gap-[32px] md:flex-row">
-                    <div className="w-full md:w-[420px] ">
+                    <div className="w-full md:w-[420px] flex justify-center items-center">
                         <img
                             src="./uva-logo.jpg"
-                            className="w-full"
+                            className="w-[50%] md:w-full"
                             alt="UVa"
                         />
                     </div>
-                    <div className="w-full">
+                    <div className="w-full flex flex-col justify-center items-center md:justify-normal md:items-start">
                         <h2 className="flex flex-row items-center gap-[8px] text-[16px] text-slate-800 md:text-black md:text-[24px] font-semibold pb-[16px]">
                             University of Virginia
                         </h2>

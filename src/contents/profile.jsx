@@ -1,7 +1,6 @@
 import { Hero } from '../components/common'
 import { IoLogoGithub } from 'react-icons/io'
 import { TfiEmail } from 'react-icons/tfi'
-import { FaBlogger } from 'react-icons/fa6'
 import { useState, useRef, useEffect } from 'react'
 
 const Profile = () => {
@@ -47,7 +46,7 @@ const Profile = () => {
                     className="w-[100vw] m-auto rounded-full border-2 border-slate-500"
                 />
             </div>
-            <div className="w-[100%] box-border md:w-[70%] md:p-[10px] ">
+            <div className="w-[100%] box-border md:w-[70%] md:p-[10px] flex flex-col items-center">
                 <Hero>
                     Byungjoo Park <span className="text-[20px] text-slate-400 font-normal pl-[10px]">Andy</span>
                 </Hero>
@@ -65,10 +64,6 @@ const Profile = () => {
                     >
                         <IoLogoGithub />
                         byungjoo0806
-                    </a>
-                    <a href="https://tistory.com" className="flex items-center gap-[5px] text-slate-600">
-                        <FaBlogger />
-                        blog...
                     </a>
                 </p>
             </div>

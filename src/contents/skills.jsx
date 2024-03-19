@@ -94,10 +94,10 @@ const Skills = () => {
                                     able to create and connect with databases through MySQL using Sequelize library for Node.js
                                 </li>
                                 <li>
-                                    able to deploy HTMl projects through AWS EC2
+                                    able to deploy projects through AWS EC2
                                 </li>
                                 <li>
-                                    want to learn how to deploy React projects using S3 and Amplify
+                                    want to learn how to deploy projects using S3 and Amplify
                                 </li>
                             </ul>
                         </li>
