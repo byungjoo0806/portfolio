@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .active {
+        background-color: rgb(255 255 255);
+    }
+}
+
+@layer components {
+    .inactive {
+        background-color: rgb(203 213 225);
+        color: rgb(148 163 184);
+    }
+}
+
+@layer components {
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 30;
+    }
+}
+
+@font-face {
+    font-family: 'RobotoMono';
+    src: url('../public/RobotoMono-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
