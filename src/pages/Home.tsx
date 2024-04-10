@@ -12,7 +12,7 @@ const Home = (props: Props) => {
     <div className='w-full flex flex-col justify-center items-center'>
       <FallingBlocks />
       {/* <Intro /> */}
-      <TopMenu />
+      {/* <TopMenu /> */}
       <div className='w-full h-screen flex flex-col items-center'>
         <Profile />
         <MainInfo />
