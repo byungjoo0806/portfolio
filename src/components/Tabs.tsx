@@ -20,8 +20,6 @@ const Tabs: React.FC<TabProps> = ({tabs,children}) => {
         const tabTop = tabRef.current?.offsetTop;
         
         const onScroll = ()=>{
-            console.log(window.scrollY);
-            console.log(tabTop);
             if(tabTop){
                 if(window.scrollY >= tabTop){
                     setIsSticky(true);
@@ -44,8 +42,9 @@ const Tabs: React.FC<TabProps> = ({tabs,children}) => {
                 {tabs.map(tab => (
                     <div
                     key={tab.key}
-                    className={`tab-button ${activeTab === tab.key ? 'active' : 'inactive'} w-1/4 h-10 flex justify-center items-center hover:cursor-pointer`}
+                    className={`tab-button ${activeTab === tab.key ? 'active' : 'inactive'} h-10 flex justify-center items-center hover:cursor-pointer`}
                     onClick={() => setActiveTab(tab.key)}
+                    style={{ width: `${100 / tabs.length}%` }}
                     >
                         {tab.label}
                     </div>
