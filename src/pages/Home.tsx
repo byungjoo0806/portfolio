@@ -2,7 +2,7 @@ import React from 'react';
 import Profile from '../contents/profile/Profile';
 import MainInfo from '../contents/main-info/MainInfo';
 import FallingBlocks from '../components/FallingBlocks';
-import TopMenu from '../components/TopMenu';
+// import TopMenu from '../components/TopMenu';
 // import Intro from '../contents/intro/Intro';
 
 type Props = {}
@@ -12,7 +12,7 @@ const Home = (props: Props) => {
     <div className='w-full flex flex-col justify-center items-center'>
       <FallingBlocks />
       {/* <Intro /> */}
-      <TopMenu />
+      {/* <TopMenu /> */}
       <div className='w-full h-screen flex flex-col items-center'>
         <Profile />
         <MainInfo />
