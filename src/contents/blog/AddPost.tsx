@@ -7,9 +7,9 @@ const AddPost = (props: Props) => {
     const [codeValue,setCodeValue] = useState<string>("");
 
     function handleEditorChange(value: any, event: any) {
-        console.log(value);
+        // console.log(value);
         setCodeValue(value);
-        console.log(codeValue);
+        // console.log(codeValue);
     };
 
     return (
