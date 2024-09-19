@@ -22,7 +22,7 @@ const Projects = () => {
                 <li className="flex flex-col gap-[32px] pb-5 border-b border-gray-400 md:flex-row">
                     <div className="w-full md:w-[420px] flex flex-col justify-center items-center md:items-start">
                         <img
-                            src="./crayon-logo.png"
+                            src="./ArcAppIcon.png"
                             className="w-[50%] md:w-full"
                             alt="crayon nft"
                         />
@@ -42,7 +42,7 @@ const Projects = () => {
                     </div>
                     <div className="w-full">
                         <h2 className="flex flex-row items-center gap-[8px] text-[16px] text-slate-800 md:text-black md:text-[24px] font-semibold pb-[16px]">
-                            Human Arc {' '}<br /> (in progress) <br />
+                            Human Arc {' '}<br /> (paused) <br />
                         </h2>
 
                         <p className="leading-5 text-slate-950 text-[12px] md:text-[16px] md:leading-7">
