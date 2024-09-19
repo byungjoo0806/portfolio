@@ -265,7 +265,7 @@ const Projects = () => {
                 <div className='flex flex-col gap-[32px] md:flex-row'>
                     <div className="w-full md:w-[420px] ">
                         <img
-                            src="./crayon-logo.png"
+                            src="./ArcAppIcon.png"
                             className="w-full"
                             alt="crayon nft"
                         />
