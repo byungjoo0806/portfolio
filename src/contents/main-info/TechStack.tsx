@@ -78,6 +78,17 @@ const Skills = () => {
                                 </li>
                             </ul>
                         </li>
+                        <li className="flex flex-col gap-[8px] md:gap-[32px] md:flex-row items-baseline">
+                            <span className="text-[16px] text-slate-600 md:text-[24px] basis-[20%] flex items-center gap-[8px]">
+                                <SiReact />
+                                <span className="md:w-[120px]">React-Native</span>
+                            </span>
+                            <ul className="list-disc list-outside leading-6 px-[20px] md:leading-8 text-[12px] md:text-[16px] ">
+                                <li>
+                                    have worked on a couple of projects (team and personal) with react-native-cli
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
 
