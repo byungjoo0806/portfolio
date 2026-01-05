@@ -1,3 +1,5 @@
+'use client';
+
 import {
   SiJavascript,
   SiTypescript,
@@ -11,6 +13,10 @@ import {
   SiNextdotjs,
   SiFlutter
 } from 'react-icons/si';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 const techCategories = [
   {
@@ -49,34 +55,54 @@ const techCategories = [
 export default function TechStack() {
   return (
     <section id="tech-stack" className="h-full w-full flex justify-center items-center px-6 bg-white/50 dark:bg-black/50">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-6xl mx-auto w-full">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
           Tech Stack
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <Swiper
+          modules={[Pagination]}
+          spaceBetween={30}
+          slidesPerView={1.2}
+          centeredSlides={true}
+          // loop={true}
+          pagination={{ clickable: true }}
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 30,
+            },
+          }}
+          className="pb-12"
+        >
           {techCategories.map((category) => (
-            <div key={category.title} className="bg-white dark:bg-gray-800 rounded-2xl p-8 md:p-10 shadow-lg border border-gray-200 dark:border-gray-700">
-              <h3 className="text-xl font-bold mb-6 text-center">
-                {category.title}
-              </h3>
+            <SwiperSlide key={category.title} className="h-auto">
+              <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 md:p-10 shadow-lg border border-gray-200 dark:border-gray-700 flex flex-col min-h-[400px]">
+                <h3 className="text-xl font-bold mb-6 text-center">
+                  {category.title}
+                </h3>
 
-              <div className="grid grid-cols-2 gap-4">
-                {category.skills.map((skill) => (
-                  <div
-                    key={skill.name}
-                    className="flex flex-col items-center justify-center p-5 bg-white/50 dark:bg-black/30 rounded-xl hover:scale-105 transition-transform"
-                  >
-                    <skill.icon className={`text-4xl mb-3 ${skill.color}`} />
-                    <span className="text-xs font-medium text-center">
-                      {skill.name}
-                    </span>
-                  </div>
-                ))}
+                <div className="grid grid-cols-2 gap-4 flex-1">
+                  {category.skills.map((skill) => (
+                    <div
+                      key={skill.name}
+                      className="flex flex-col items-center justify-center p-5 bg-white/50 dark:bg-black/30 rounded-xl hover:scale-105 transition-transform"
+                    >
+                      <skill.icon className={`text-4xl mb-3 ${skill.color}`} />
+                      <span className="text-xs font-medium text-center">
+                        {skill.name}
+                      </span>
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
+            </SwiperSlide>
           ))}
-        </div>
+        </Swiper>
       </div>
     </section>
   );
