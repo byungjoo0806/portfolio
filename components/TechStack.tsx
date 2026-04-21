@@ -9,10 +9,10 @@ import {
   SiMysql,
   SiTailwindcss,
   SiSolidity,
-  SiAmazon,
   SiNextdotjs,
   SiFlutter
 } from 'react-icons/si';
+import { FaAws } from 'react-icons/fa';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import 'swiper/css';
@@ -47,7 +47,7 @@ const techCategories = [
   {
     title: 'Tools & Deployment',
     skills: [
-      { name: 'AWS EC2', icon: SiAmazon, color: 'text-orange-500' },
+      { name: 'AWS EC2', icon: FaAws, color: 'text-orange-500' },
     ],
   },
 ];
