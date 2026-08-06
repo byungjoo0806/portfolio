@@ -10,6 +10,14 @@ import 'swiper/css/pagination';
 const projects = [
   {
     id: 1,
+    title: 'Jigekun',
+    description: 'A location-based short-term labor matching platform live on the App Store and Google Play. Smart matching by distance and trust score, Toss Payments integration, and an AI agent that turns plain Korean into structured job requests.',
+    image: '/jigekun.png',
+    tech: ['Flutter', 'Dart', 'Firebase', 'TypeScript', 'Claude API'],
+    duration: 'Jan 2026 - ',
+  },
+  {
+    id: 2,
     title: 'EHCO',
     description: 'Real-time verified facts and timeline about Korean celebrities. Latest K-Pop news with accurate fact-checking.',
     image: '/ehco.png',
@@ -18,7 +26,7 @@ const projects = [
     duration: 'Jan 2025 - ',
   },
   {
-    id: 2,
+    id: 3,
     title: 'SkyTrade',
     description: 'SkyTrade lets you monetize your air rights, the legal right to use and control the space above buildings and land.',
     image: '/skytrade.png',
@@ -26,7 +34,7 @@ const projects = [
     duration: 'Oct 2024 - Jan 2025',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Human Arc',
     description: 'A startup mobile application focused on human connection and personal growth. Features real-time updates, user authentication, and a modern mobile-first design.',
     image: '/ArcAppIcon.png',
@@ -35,7 +43,7 @@ const projects = [
     duration: 'Mar 2024 - Aug 2024',
   },
   {
-    id: 4,
+    id: 5,
     title: 'Real Estate STO',
     description: 'A blockchain-based Security Token Offering platform for real estate investments. Built in collaboration with Bounce;code, this project enables fractional ownership of real estate through tokenization.',
     image: '/bouncecode.png',
@@ -44,7 +52,7 @@ const projects = [
     duration: 'Nov 2023 - Dec 2023',
   },
   {
-    id: 5,
+    id: 6,
     title: 'Steam100',
     description: 'A gaming platform project showcasing top Steam games with interactive features and user reviews.',
     image: '/steam100.png',
@@ -53,7 +61,7 @@ const projects = [
     duration: 'July 2023 - Aug 2023'
   },
   {
-    id: 6,
+    id: 7,
     title: 'Baeshimjas',
     description: 'Blockchain controlled jury system',
     image: '/baeshimjas.png',
@@ -62,7 +70,7 @@ const projects = [
     duration: 'Seoul Web3 Festival'
   },
   {
-    id: 7,
+    id: 8,
     title: 'LINKee',
     description: 'A social networking system where users share thoughts, photos, and chat.',
     image: '/linkee.png',
@@ -71,7 +79,7 @@ const projects = [
     duration: 'June 2023 - July 2023'
   },
   {
-    id: 8,
+    id: 9,
     title: 'Sangpay',
     description: 'An online blockchain wallet to manage cryptocurrency.',
     image: '/sangpay.png',
@@ -125,11 +133,9 @@ export default function Projects() {
                 <div className="px-6 py-6">
                   <h3 className="text-xl font-bold mb-3">{project.title}</h3>
 
-                  {project.team && (
-                    <p className="text-xs text-gray-500 dark:text-gray-400 mb-4">
-                      {project.team} • {project.duration}
-                    </p>
-                  )}
+                  <p className="text-xs text-gray-500 dark:text-gray-400 mb-4">
+                    {[project.team, project.duration].filter(Boolean).join(' • ')}
+                  </p>
 
                   <p className="text-sm text-gray-600 dark:text-gray-300 mb-5 line-clamp-3 leading-relaxed">
                     {project.description}

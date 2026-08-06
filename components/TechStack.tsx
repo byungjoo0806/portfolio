@@ -10,7 +10,11 @@ import {
   SiTailwindcss,
   SiSolidity,
   SiNextdotjs,
-  SiFlutter
+  SiFlutter,
+  SiDart,
+  SiFirebase,
+  SiGooglecloud,
+  SiClaude
 } from 'react-icons/si';
 import { FaAws } from 'react-icons/fa';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -24,6 +28,7 @@ const techCategories = [
     skills: [
       { name: 'JavaScript', icon: SiJavascript, color: 'text-yellow-500' },
       { name: 'TypeScript', icon: SiTypescript, color: 'text-blue-600' },
+      { name: 'Dart', icon: SiDart, color: 'text-sky-600' },
       { name: 'Solidity', icon: SiSolidity, color: 'text-gray-700 dark:text-gray-300' },
     ],
   },
@@ -42,12 +47,15 @@ const techCategories = [
       { name: 'Node.js', icon: SiNodedotjs, color: 'text-green-600' },
       { name: 'Express', icon: SiExpress, color: 'text-gray-700 dark:text-gray-300' },
       { name: 'MySQL', icon: SiMysql, color: 'text-blue-700' },
+      { name: 'Firebase', icon: SiFirebase, color: 'text-amber-500' },
     ],
   },
   {
     title: 'Tools & Deployment',
     skills: [
       { name: 'AWS EC2', icon: FaAws, color: 'text-orange-500' },
+      { name: 'Google Cloud', icon: SiGooglecloud, color: 'text-blue-500' },
+      { name: 'Claude API', icon: SiClaude, color: 'text-orange-600' },
     ],
   },
 ];
@@ -81,7 +89,7 @@ export default function TechStack() {
         >
           {techCategories.map((category) => (
             <SwiperSlide key={category.title} className="h-auto">
-              <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 md:p-10 shadow-lg border border-gray-200 dark:border-gray-700 flex flex-col min-h-[400px]">
+              <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 md:p-10 shadow-lg border border-gray-200 dark:border-gray-700 flex flex-col h-[400px]">
                 <h3 className="text-xl font-bold mb-6 text-center">
                   {category.title}
                 </h3>
