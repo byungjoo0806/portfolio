@@ -73,23 +73,24 @@ export default function Education() {
                         src={edu.logo}
                         alt={edu.institution}
                         fill
+                        sizes="(min-width: 768px) 112px, 96px"
                         className="object-contain"
                       />
                     </div>
                   </div>
 
-                  <div className="flex-1 text-center md:text-left">
+                  <div className="flex-1 text-left">
                     <h3 className="text-xl md:text-2xl font-bold mb-3">
                       {edu.institution}
                     </h3>
 
-                    <div className="flex items-center justify-center md:justify-start gap-2 text-blue-600 dark:text-blue-400 mb-2 text-sm">
-                      <FaGraduationCap />
+                    <div className="flex items-start gap-2 text-blue-600 dark:text-blue-400 mb-2 text-sm">
+                      <FaGraduationCap className="shrink-0 mt-1" />
                       <span className="font-medium">{edu.degree}</span>
                     </div>
 
-                    <div className="flex items-center justify-center md:justify-start gap-2 text-gray-500 dark:text-gray-400 mb-4 text-xs">
-                      <FaCalendar />
+                    <div className="flex items-center gap-2 text-gray-500 dark:text-gray-400 mb-4 text-xs">
+                      <FaCalendar className="shrink-0" />
                       <span>{edu.duration}</span>
                     </div>
 
@@ -101,7 +102,7 @@ export default function Education() {
                       {edu.highlights.map((highlight, index) => (
                         <li
                           key={index}
-                          className="flex items-start justify-center md:justify-start gap-2 text-sm text-gray-700 dark:text-gray-300"
+                          className="flex items-start gap-2 text-sm text-gray-700 dark:text-gray-300"
                         >
                           <span className="text-blue-600 dark:text-blue-400 mt-0.5">•</span>
                           <span>{highlight}</span>

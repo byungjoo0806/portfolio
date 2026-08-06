@@ -5,10 +5,11 @@ import type { Swiper as SwiperType } from 'swiper';
 
 const navItems = [
   { label: 'Home', slideIndex: 0 },
-  { label: 'Projects', slideIndex: 1 },
-  { label: 'Tech Stack', slideIndex: 2 },
-  { label: 'Education', slideIndex: 3 },
-  { label: 'Contact', slideIndex: 4 },
+  { label: 'About', slideIndex: 1 },
+  { label: 'Projects', slideIndex: 2 },
+  { label: 'Tech Stack', slideIndex: 3 },
+  { label: 'Education', slideIndex: 4 },
+  { label: 'Contact', slideIndex: 5 },
 ];
 
 interface NavigationProps {

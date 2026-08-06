@@ -9,6 +9,7 @@ import 'swiper/css/pagination';
 
 import Navigation from '@/components/Navigation';
 import Hero from '@/components/Hero';
+import About from '@/components/About';
 import Projects from '@/components/Projects';
 import TechStack from '@/components/TechStack';
 import Education from '@/components/Education';
@@ -41,6 +42,9 @@ export default function Home() {
       >
         <SwiperSlide>
           <Hero />
+        </SwiperSlide>
+        <SwiperSlide>
+          <About />
         </SwiperSlide>
         <SwiperSlide>
           <Projects />

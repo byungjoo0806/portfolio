@@ -15,7 +15,7 @@ export default function Contact() {
         <div className="bg-white dark:bg-gray-800 rounded-3xl p-10 md:p-16 shadow-lg border border-gray-200 dark:border-gray-700">
           <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8">
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:andybyungjoopark@gmail.com"
               className="flex items-center justify-center gap-2 px-6 py-3 bg-linear-to-r from-blue-600 to-purple-600 text-white rounded-full hover:scale-105 transition-transform font-medium text-sm"
             >
               <FaEnvelope className="text-base" />
@@ -25,7 +25,7 @@ export default function Contact() {
 
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/byungjoo0806"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-5 py-2.5 bg-gray-100 dark:bg-gray-700 rounded-full hover:scale-105 transition-transform text-sm border border-gray-300 dark:border-gray-600"
@@ -35,7 +35,7 @@ export default function Contact() {
               <span>GitHub</span>
             </a>
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/byungjoo-park-2700a4249/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-5 py-2.5 bg-gray-100 dark:bg-gray-700 rounded-full hover:scale-105 transition-transform text-sm border border-gray-300 dark:border-gray-600"
@@ -49,7 +49,6 @@ export default function Contact() {
 
         <footer className="mt-16 text-gray-500 dark:text-gray-400">
           <p className="text-sm">&copy; {new Date().getFullYear()} Byungjoo Park. All rights reserved.</p>
-          <p className="mt-2 text-xs italic">&quot;Connecting the blocks, Connecting the world&quot;</p>
         </footer>
       </div>
     </section>

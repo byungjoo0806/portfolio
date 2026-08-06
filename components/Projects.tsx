@@ -125,6 +125,7 @@ export default function Projects() {
                       src={project.image}
                       alt={project.title}
                       fill
+                      sizes="(min-width: 1024px) 460px, (min-width: 640px) 66vw, 83vw"
                       className="object-contain p-4"
                     />
                   </div>
